@@ -1,0 +1,42 @@
+{
+  "name": "@yleisradio/umk-frontend",
+  "version": "0.0.1",
+  "description": "Mobile frontend for UMK voting",
+  "license": "Yle Only",
+  "author": "Yleisradio",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yleisradio/yle-umk-frontend.git"
+  },
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "pod": "cd ios && pod install && cd -",
+    "webp": "cd src && cd assets && sh ./convertWebP.sh",
+    "clear-cache": "watchman watch-del-all && rm yarn.lock && rm -rf node_modules && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-map-* && yarn & yarn start --reset-cache"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.15.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
