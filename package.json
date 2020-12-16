@@ -1,9 +1,10 @@
 {
-  "name": "@yleisradio/umk-frontend",
+  "name": "umk",
   "version": "0.0.1",
   "description": "Mobile frontend for UMK voting",
   "license": "Yle Only",
   "author": "Yleisradio",
+  "main": "index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
